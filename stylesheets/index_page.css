@@ -32,6 +32,12 @@ div.inner > * {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotateY( 180deg );
+}
+.main .utp:hover {
+  transform: rotateY( 0deg );
 }
 .main .utp .info {
   display: none;
