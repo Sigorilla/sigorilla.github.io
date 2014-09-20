@@ -1,0 +1,76 @@
+article.schedule {
+  max-width: inherit;
+}
+article.schedule table {
+  text-align: center;
+  position: relative;
+  width: initial;
+}
+article.schedule table tr > * {
+  vertical-align: middle;
+}
+article.schedule table th {
+  height: 50px;
+}
+article.schedule table td {
+  width: 15%;
+  /*height: 80px;*/
+}
+article.schedule table td.time {
+  width: 150px;
+}
+article.schedule table span {
+  display: block;
+  /*width: 200px;*/
+}
+article.schedule .empty {
+  background-color: rgba(204, 255, 204, 0.213);
+}
+article.schedule .other {
+  background-color: rgba(255, 255, 153, 0.213);
+}
+article.schedule .lect {
+  background-color: rgba(255, 153, 204, 0.213);
+}
+article.schedule .sem {
+  background-color: rgba(204, 255, 255, 0.213);
+}
+.time sup {
+  border-bottom: 1px solid;
+}
+#main, article {
+  overflow: visible;
+}
+
+/* Print */
+@media print {
+
+  * {
+    font-weight: normal !important;
+  }
+  body {
+    font-family: Arial;
+    font-size: .9em;
+    margin: 0;
+  }
+  nav, footer, header {
+    display: none;
+  }
+  article > *:not(h2),
+  div.inner > *:not(h2) {
+    margin: 0;
+  }
+  article.schedule table {
+    width: 100%;
+  }
+  table td {
+    padding: 0;
+  }
+  table th {
+    height: inherit;
+  }
+  .time sup {
+    border-bottom: none;
+  }
+
+}

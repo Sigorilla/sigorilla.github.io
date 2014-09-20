@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <title>Sigorilla.github.io by Igor Stepanov</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="title" content="Main page">
+    <meta name="title" content="Base page">
     <meta name="author" content="Igor Stepanov">
     <meta name="description" content="Github.io by Igor Stepanov">
-    <meta property="og:title" content="Main page">
+    <meta property="og:title" content="Base page">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="//sigorilla.github.io/">
+    <meta property="og:url" content="//sigorilla.github.io/base/">
     <meta property="og:image" content="/images/title.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/stylesheets/base.css">
@@ -46,49 +43,69 @@
 </header>
 
 <main id="main">
-  <article class="main">
-    <table class="tbnoborder">
-      <tr>
-        <td>
-          <a href="/blog/" class="utp" id="blog">
-            <span class="info">Блог</span>
-          </a>
-        </td>
-        <td>
-          <a href="/schedule/" class="utp" id="schedule">
-            <span class="info">Расписание</span>
-          </a>
-        </td>
-        <td>
-          <a href="/scrobbler/" class="utp" id="scrobbler">
-            <span class="info">Scrobbler</span>
-          </a>
-        </td>
-      </tr>
-    </table>
-    <div>
+    <article class="base post detail">
+      <p class="intro">На этой странице показаны все реализованные элементы. Список содержания создается автоматически, прямо в браузере, поэтому не отключайте JavaScript. Так же <code>&lt;h5&gt;</code> и <code>&lt;h6&gt;</code> будут преобразованы в <code>&lt;h4&gt;</code>, а <code>&lt;h1&gt;</code> в <code>&lt;h2&gt;</code></p>
+
+      <h2>Second level</h2>
+      <h3>Third</h3>
+      <h4>Fourth</h4>
+      <p>Now: {% now "H:i" %}</p>
+      <p>Link: <a href="#">ipsum</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae iure quo asperiores obcaecati ducimus corrupti debitis atque, possimus autem alias!</p>
+      <h3>Paragraph</h3>
+      <h5>Fifth?</h5>
+      <p>Abbreviation: <abbr title="Moscow Institute of Physics and Technology">MIPT</abbr>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, voluptatibus.</p>
+      <h2>Some other info</h2>
+      <h3>Table</h3>
+      <table>
+        <tr>
+          <th colspan="3">Table</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
+      <h3>Image</h3>
+      <p>
+        <img src="//pp.vk.me/c540104/c540100/v540100129/4de02/LjDm2XmoD-Q.jpg" alt="Nature">
+        <label for="img">Title of picture</label>
+      </p>
+      <h3>Quote</h3>
+      <blockquote>
+        <q>Hello, world! This is quote.</q>
+        <cite>Author</cite>
+      </blockquote>
       <hr>
-    </div>
-    <table class="tbnoborder">
-      <tr>
-        <td>
-          <a href="//vk.com/sigorilla" target="_blank" class="utp" id="vk">
-            <span class="info">VK</span>
-          </a>
-        </td>
-        <td>
-          <a href="//twitter.com/sigorillo" target="_blank" class="utp" id="twitter">
-            <span class="info">Twitter</span>
-          </a>
-        </td>
-        <td>
-          <a href="mailto:igor.stepanov@frtk.ru" target="_blank" class="utp" id="email">
-            <span class="info">Почта</span>
-          </a>
-        </td>
-      </tr>
-    </table>
-  </article>
+      <ol>
+        <li>Lorem ipsum dolor.</li>
+        <ol>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem</li>
+        </ol>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <h2>Conclusion</h2>
+      <h3>Code</h3>
+      <pre>
+        <p>// This block code...</p>
+        <p>var a = 1;</p>
+      </pre>
+      <p>Some piece of code: <code>var b = {key: value};</code> This is example of inline code. Для написания html вставок используйте <code><</code> -- <span>&</span><span>lt;</span> и <code>></code> -- <span>&</span><span>gt;</span></p>
+      <h3>Contact</h3>
+      <p>Thank you for your attention! You can write me by:</p>
+      <ul>
+        <li><a href="//twitter.com/sigorillo">@sigorilla</a></li>
+        <li>Other ways..</li>
+      </ul>
+      <p class="pub_date">Aug. 18, 2014, 12:50 p.m.</p>
+    </article>
 </main>
 
 <footer>
