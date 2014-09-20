@@ -5,10 +5,6 @@
 .main a:visited { 
   color: #0d97ff;
 }
-article, 
-div.inner {
-  max-width: 690px;
-}
 article > *,
 div.inner > * {
   margin: 0;
