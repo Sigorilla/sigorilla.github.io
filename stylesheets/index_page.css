@@ -37,7 +37,7 @@ div.inner > * {
   display: none;
 }
 .main .utp:hover .info {
-  /*display: inline-block;*/
+  display: inline-block;
 }
 
 /* all background-image */
@@ -48,13 +48,13 @@ div.inner > * {
   /*background-image: url(/images/vk.png);*/
 }
 #schedule {
-  background-color: #e74c3c;
+  background-color: #fff55b;
 }
 #schedule:hover {
   /*background-image: url(/images/vk.png);*/
 }
 #scrobbler {
-  background-color: #5f6d7c;
+  background-color: #e74c3c;
 }
 #scrobbler:hover {
   /*background-image: url(/images/vk.png);*/
