@@ -2,21 +2,21 @@
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
-    <title>Sigorilla.github.io by Igor Stepanov</title>
+    <title>Scrobbler by Igor Stepanov</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Main page">
+    <meta name="title" content="Base page">
     <meta name="author" content="Igor Stepanov">
     <meta name="description" content="Github.io by Igor Stepanov">
-    <meta property="og:title" content="Main page">
+    <meta property="og:title" content="Base page">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="//sigorilla.github.io/">
+    <meta property="og:url" content="//sigorilla.github.io/base/">
     <meta property="og:image" content="/images/title.png">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/stylesheets/base.css">
-    <link rel="stylesheet" href="/stylesheets/index_page.css">
+    <link rel="stylesheet" href="/stylesheets/scrobbler.css">
     <script src="/javascripts/jquery-2.1.1.min.js"></script>
     <script src="/javascripts/base.js"></script>
-    <script src="/javascripts/index_page.js"></script>
+    <script src="/javascripts/scrobbler.js"></script>
   </head>
 <body>
 
@@ -42,52 +42,35 @@
 </nav>
 
 <header>
-  <h1>Igor Stepanov</h1>
+  <h1>Scrobbler</h1>
 </header>
 
 <main id="main">
-  <article class="main">
-    <table class="tbnoborder">
+  <article class="scrobbler_form">
+    <form id="change_name">
+      <input type="text" id="new_nick" placeholder="Введи ник пользователя Last.fm">
+    </form>
+  </article>
+
+  <article class="scrobbler">
+    <h2>Now playing</h2>
+    <table>
       <tr>
-        <td>
-          <a href="/schedule/" class="utp" id="schedule">
-            <span class="info">Schedule</span>
-          </a>
-        </td>
-        <td>
-          <a href="/scrobbler/" class="utp" id="scrobbler">
-            <span class="info">Scrobbler</span>
-          </a>
-        </td>
-        <td>
-          <a href="//blog.master-igor.com" class="utp" id="blog">
-            <span class="info">Blog</span>
-          </a>
-        </td>
+        <td><span class="label" id="label_nick">User</span></td>
+        <td><span id="nick">Sigorilla</span></td>
+      </tr>
+      <tr>
+        <td><span class="label" id="label_name">Track</span></td>
+        <td><a href="{{ track.url }}" id="name" target="_blank"></a></td>
+      </tr>
+      <tr>
+        <td><span class="label" id="label_artist">Artist</span></td>
+        <td><span id="artist"></span></td>
       </tr>
     </table>
-    <div>
-      <hr>
-    </div>
-    <table class="tbnoborder">
-      <tr>
-        <td>
-          <a href="//vk.com/sigorilla" target="_blank" class="utp" id="vk">
-            <span class="info">VK</span>
-          </a>
-        </td>
-        <td>
-          <a href="//twitter.com/sigorillo" target="_blank" class="utp" id="twitter">
-            <span class="info">Twitter</span>
-          </a>
-        </td>
-        <td>
-          <a href="mailto:igor.stepanov@frtk.ru" target="_blank" class="utp" id="email">
-            <span class="info">Почта</span>
-          </a>
-        </td>
-      </tr>
-    </table>
+    <p>
+      <img src="http://screenshots.en.sftcdn.net/blog/en/2012/10/10-15-2012-2-22-52-PM-300x300.png" alt="Image" id="img">
+    </p>
   </article>
 </main>
 
