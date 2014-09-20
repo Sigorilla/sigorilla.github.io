@@ -3,6 +3,7 @@ $(document).ready(function () {
     // code here ...
   });
 
+  $(".hide").hide().removeClass("hide");
   $(".onload_1").delay(1000).fadeIn(1000);
   $(".onload_2").delay(1500).fadeIn(1000);
   $(".onload_3").delay(2000).fadeIn(1000);
