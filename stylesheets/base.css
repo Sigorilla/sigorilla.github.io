@@ -14,7 +14,8 @@
 .center { text-align: center; }
 .tleft { text-align: left; }
 .tright { text-align: right; }
-.hide { display: none; }
+.show { display: inherit; }
+.hide { display: none !important; }
 .lock { overflow: hidden; }
 
 /* Reset */
