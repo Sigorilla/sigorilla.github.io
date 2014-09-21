@@ -48,10 +48,11 @@ div.inner > * {
   height: 100%;
   border-radius: 100%;
   z-index: 1;
-  transition: z-index 2s;
+  transition: display 2s;
 }
 .main .utp:hover:before {
   z-index: -1;
+  display: none;
 }
 .main .utp:hover {
   transform: rotateY( 0deg );
