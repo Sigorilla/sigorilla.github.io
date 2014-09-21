@@ -37,7 +37,7 @@ div.inner > * {
   transform-style: preserve-3d;
   transform: rotateY( 180deg );
 }
-.main .utp:before {
+.main .utp:after {
   display: block;
   position: absolute;
   background-color: inherit;
