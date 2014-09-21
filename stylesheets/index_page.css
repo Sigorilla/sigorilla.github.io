@@ -23,6 +23,7 @@ div.inner > * {
 }
 .main .utp {
   display: table-cell;
+  position: relative;
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
@@ -36,15 +37,24 @@ div.inner > * {
   transform-style: preserve-3d;
   transform: rotateY( 180deg );
 }
+.main .utp:before {
+  display: block;
+  position: absolute;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .main .utp:hover {
   transform: rotateY( 0deg );
 }
 .main .utp .info {
-  transition: display 1.1s;
-  display: none;
+  /*transition: display 1.1s;*/
+  display: inline-block;
 }
 .main .utp:hover .info {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 /* all background-image */
