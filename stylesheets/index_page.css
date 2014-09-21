@@ -101,3 +101,19 @@ div.inner > * {
 #email:hover {
   background-image: url(/images/email.png);
 }
+
+/* Small resolution */
+@media only screen and (max-width: 740px) {
+
+  .main table tr > * {
+    display: block;
+  }
+  .main td {
+    text-align: center;
+  }
+  .main td > * {
+    width: 400px;
+    height: 400px;
+  }
+
+}
