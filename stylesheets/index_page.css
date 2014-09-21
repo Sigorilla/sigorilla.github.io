@@ -107,9 +107,9 @@ div.inner > * {
 
   .main table tr > * {
     display: block;
-  }
-  .main td {
-    text-align: center;
+    width: 100%;
+    height: 400px;
+    text-align: -webkit-center;
   }
   .main td > * {
     width: 400px;
