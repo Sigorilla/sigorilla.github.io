@@ -11,77 +11,100 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="//sigorilla.github.io/">
   <meta property="og:image" content="/images/title.png">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/base.css">
-  <link rel="stylesheet" href="/stylesheets/index_page.css">
   <script src="/javascripts/jquery-2.1.1.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
   <script src="/javascripts/base.js"></script>
-  <script src="/javascripts/index_page.js"></script>
 </head>
 
 <body>
 
-  <header class="hide">
-    <h1>Igor Stepanov</h1>
-    <hr>
-  </header>
+<header class="">
+  <h1><i class="fa fa-coffee"></i> Igor Stepanov at GitHub.io</h1>
+</header>
 
-  <main id="main">
-    <article class="main">
-      <div>See more on my website: <a href="//master-igor.com">Master-Igor.com</a>.</div>
-    </article>
-  </main>
-
-  <footer>
-    <div class="center inner">
-      <p class="hide">&copy; 2014 Igor Stepanov = <code>[
-        <a href="//vk.com/sigorilla" target="_blank">vk</a>, 
-        <a href="//twitter.com/sigorillo" target="_blank">twitter</a>,
-        <a href="mailto:sigorilla@gmail.com" target="_blank">email</a>,
-      ]</code></p>
+<main id="main">
+  <article class="main">
+    <p class="intro">MIPT student, WEB programmer</p>
+    
+    <h2>My contacts</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li><i class="fa fa-vk"></i> <a href="//vk.com/sigorilla" target="_blank">/sigorilla</a></li>
+          <li><i class="fa fa-twitter"></i> <a href="//twitter.com/sigorillo" target="_blank">/sigorillo</a></li>
+          <li><i class="fa fa-instagram"></i> <a href="//instagram.com/sigorillo" target="_blank">/sigorillo</a></li>
+          <li><i class="fa fa-facebook"></i> <a href="//facebook.com/sigorilla" target="_blank">/sigorilla</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li><i class="fa fa-github-alt"></i> <a href="//github.com/sigorilla" target="_blank">/sigorilla</a></li>
+          <li><i class="fa fa-lastfm"></i> <a href="//lastfm.ru/user/Sigorilla" target="_blank">/sigorilla</a></li>
+          <li><i class="fa fa-medium"></i> <a href="//medium.com/@sigorilla" target="_blank">/sigorilla</a></li>
+          <li><i class="fa fa-headphones"></i> <a href="//grooveshark.com/#!/sigorilla" target="_blank">/sigorilla</a></li>
+        </ul>
+      </div>
     </div>
-  </footer>
+    <hr>
+    <div>See more on my website: <a href="//master-igor.com">Master-Igor.com</a>.</div>
+  </article>
+</main>
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-  (function (d, w, c) {
-      (w[c] = w[c] || []).push(function() {
-          try {
-              w.yaCounter25920671 = new Ya.Metrika({id:25920671,
-                      webvisor:true,
-                      clickmap:true,
-                      trackLinks:true,
-                      accurateTrackBounce:true});
-          } catch(e) { }
-      });
+<footer>
+  <div class="center inner">
+    <p class="">&copy; 2014 Igor Stepanov = <code>[
+      <a href="//vk.com/sigorilla" target="_blank">vk</a>, 
+      <a href="//facebook.com/sigorilla" target="_blank">facebook</a>,
+      <a href="//twitter.com/sigorillo" target="_blank">twitter</a>,
+      <a href="mailto:sigorilla@gmail.com" target="_blank">email</a>,
+    ]</code></p>
+  </div>
+</footer>
 
-      var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () { n.parentNode.insertBefore(s, n); };
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25920671 = new Ya.Metrika({id:25920671,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
 
-      if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-      } else { f(); }
-  })(document, window, "yandex_metrika_callbacks");
-  </script>
-  <noscript><div><img src="//mc.yandex.ru/watch/25920671" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-  <!-- Google.Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25920671" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
-    ga('create', 'UA-53972648-1', 'auto');
-    ga('send', 'pageview');
+<!-- Google.Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  </script>
-  <!-- /Google.Analytics -->
+  ga('create', 'UA-53972648-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- /Google.Analytics -->
 
 </body>
 </html>
